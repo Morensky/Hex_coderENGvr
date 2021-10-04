@@ -23,7 +23,7 @@ def PIXELATION(file_name):
       for word, w_num in dict_utf8.items():
           if line_word[i] == word:
               line_bytes.append(w_num)
-  key, line_bytes1 = random.randrange(194, 255), []
+  key, line_bytes1 = random.randrange(127, 255), []
   for i in line_bytes:
     if i < key:
       line_bytes1.append(key - i)
